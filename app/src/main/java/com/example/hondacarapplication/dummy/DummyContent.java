@@ -47,7 +47,7 @@ public class DummyContent {
     public static class DummyItem {
         public final String id;
         public final String title;
-        public final String description;
+        public final String description; //for car description
 
         public DummyItem(String id, String title, String description) {
             this.id = id;
