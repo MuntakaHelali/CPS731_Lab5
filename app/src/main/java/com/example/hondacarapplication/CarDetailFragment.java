@@ -64,7 +64,6 @@ public class CarDetailFragment extends Fragment {
 
         // Show the dummy content as text in a TextView.
         if (mItem != null) {
-           // ((TextView) rootView.findViewById(R.id.car_detail)).setText(mItem.information);
             if (mItem.id.equals("1"))
             {
                 rootView = inflater.inflate(R.layout.hondajazzfit, container, false);
@@ -94,7 +93,6 @@ public class CarDetailFragment extends Fragment {
                 rootView = inflater.inflate(R.layout.hondansx, container, false);
             }
         }
-
         return rootView;
     }
 }

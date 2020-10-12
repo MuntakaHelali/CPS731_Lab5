@@ -25,7 +25,6 @@ public class DummyContent {
      */
     public static final Map<String, DummyItem> ITEM_MAP = new HashMap<String, DummyItem>();
 
-//    private static final int COUNT = 25;
 
     static {
         addItem(new DummyItem("1","Honda Jazz/Fit","A small MPV that has been on the market since 2000 and it is now on its fourth generation. The previous generations were available only as city-vehicles."));
