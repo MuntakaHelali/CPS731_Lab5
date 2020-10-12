@@ -52,7 +52,7 @@ public class CarDetailFragment extends Fragment {
             Activity activity = this.getActivity();
             CollapsingToolbarLayout appBarLayout = (CollapsingToolbarLayout) activity.findViewById(R.id.toolbar_layout);
             if (appBarLayout != null) {
-                appBarLayout.setTitle(mItem.content);
+                appBarLayout.setTitle(mItem.title);
             }
         }
     }
@@ -64,7 +64,35 @@ public class CarDetailFragment extends Fragment {
 
         // Show the dummy content as text in a TextView.
         if (mItem != null) {
-            ((TextView) rootView.findViewById(R.id.car_detail)).setText(mItem.details);
+           // ((TextView) rootView.findViewById(R.id.car_detail)).setText(mItem.information);
+            if (mItem.id.equals("1"))
+            {
+                rootView = inflater.inflate(R.layout.hondajazzfit, container, false);
+            }
+            if (mItem.id.equals("2"))
+            {
+                rootView = inflater.inflate(R.layout.hondaodyssey, container, false);
+            }
+            if (mItem.id.equals("3"))
+            {
+                rootView = inflater.inflate(R.layout.hondacivichatchback, container, false);
+            }
+            if (mItem.id.equals("4"))
+            {
+                rootView = inflater.inflate(R.layout.hondacrv, container, false);
+            }
+            if (mItem.id.equals("5"))
+            {
+                rootView = inflater.inflate(R.layout.hondacivicsedan, container, false);
+            }
+            if (mItem.id.equals("6"))
+            {
+                rootView = inflater.inflate(R.layout.hondacivictyper, container, false);
+            }
+            if (mItem.id.equals("7"))
+            {
+                rootView = inflater.inflate(R.layout.hondansx, container, false);
+            }
         }
 
         return rootView;

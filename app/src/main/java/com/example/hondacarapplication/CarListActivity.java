@@ -19,6 +19,8 @@ import android.widget.TextView;
 
 import com.example.hondacarapplication.dummy.DummyContent;
 
+import org.w3c.dom.Text;
+
 import java.util.List;
 
 /**
@@ -45,15 +47,6 @@ public class CarListActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         toolbar.setTitle(getTitle());
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
 
         if (findViewById(R.id.car_detail_container) != null) {
             // The detail container view will be present only in the
@@ -94,7 +87,7 @@ public class CarListActivity extends AppCompatActivity {
                     Context context = view.getContext();
                     Intent intent = new Intent(context, CarDetailActivity.class);
                     intent.putExtra(CarDetailFragment.ARG_ITEM_ID, item.id);
-
+                    //intent.putExtra("",item.description);
                     context.startActivity(intent);
                 }
             }
@@ -117,8 +110,8 @@ public class CarListActivity extends AppCompatActivity {
 
         @Override
         public void onBindViewHolder(final ViewHolder holder, int position) {
-            holder.mIdView.setText(mValues.get(position).id);
-            holder.mContentView.setText(mValues.get(position).content);
+            holder.mTitle.setText(mValues.get(position).title);
+            holder.mDescription.setText(mValues.get(position).description);
 
             holder.itemView.setTag(mValues.get(position));
             holder.itemView.setOnClickListener(mOnClickListener);
@@ -130,13 +123,13 @@ public class CarListActivity extends AppCompatActivity {
         }
 
         class ViewHolder extends RecyclerView.ViewHolder {
-            final TextView mIdView;
-            final TextView mContentView;
+            final TextView mTitle;
+            final TextView mDescription;
 
             ViewHolder(View view) {
                 super(view);
-                mIdView = (TextView) view.findViewById(R.id.id_text);
-                mContentView = (TextView) view.findViewById(R.id.content);
+                mTitle = (TextView) view.findViewById(R.id.title);
+                mDescription = (TextView) view.findViewById(R.id.description);
             }
         }
     }

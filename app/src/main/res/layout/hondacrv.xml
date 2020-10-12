@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/hondacrv"
+        android:scaleType="centerCrop">
+    </ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:text="ENGINE SPECS  –  1.5L Turbo CVT (190 HP)\n
+    \nCylinders: L4 \n\n
+    Displacement: 1497 cm3\n\n
+    Power:\n
+        139.7 KW @ 5600 RPM\n
+        190 HP @ 5600 RPM\n
+        187 BHP @ 5600 RPM\n\n
+    Torque:\n
+        179 lb-ft @ 2000-5000 RPM\n
+        243 Nm @ 2000-5000 RPM\n\n
+    Fuel System: Turbocharged Direct Injection \n\n
+    Fuel: Gasoline"
+        android:textSize="19sp">
+    </TextView>
+
+</LinearLayout>

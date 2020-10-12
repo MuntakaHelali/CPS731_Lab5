@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/hondacivicsedan"
+        android:scaleType="centerCrop">
+    </ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:text="ENGINE SPECS  –  1.5L CVT (174 HP)\n
+    \nCylinders: L4 \n\n
+    Displacement: 1497 cm3\n\n
+    Power:\n
+        128 KW @ 6000 RPM\n
+        174 HP @ 6000 RPM\n
+        172 BHP @ 6000 RPM\n\n
+    Torque:\n
+        120 lb-ft @ 1700-5500 RPM\n
+        162 Nm @ 1700-5500 RPM\n\n
+    Fuel System: Turbocharge Direct Injection \n\n
+    Fuel: Gasoline"
+        android:textSize="19sp">
+    </TextView>
+
+</LinearLayout>

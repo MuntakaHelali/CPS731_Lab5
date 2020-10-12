@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/hondaodyssey"
+        android:scaleType="centerCrop">
+    </ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:text="ENGINE SPECS  –  3.5L V6 i-VTEC 10AT (280 HP)\n
+    \nCylinders: V6 \n\n
+    Displacement: 3471 cm3\n\n
+    Power:\n
+        205.9 KW @ 6000 RPM\n
+        280 HP @ 6000 RPM\n
+        276 BHP @ 6000 RPM\n\n
+    Torque:\n
+        262 lb-ft @ 4700 RPM\n
+        355 Nm @ 4700 RPM\n\n
+    Fuel System: Turbocharged Direct Injection\n\n
+    Fuel: Gasoline"
+        android:textSize="19sp">
+    </TextView>
+
+</LinearLayout>

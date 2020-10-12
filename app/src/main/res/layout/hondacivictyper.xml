@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/hondacivicr"
+        android:scaleType="centerCrop">
+    </ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:text="ENGINE SPECS  –  3.5L V6 9AT (573 HP)\n
+    \nCylinders: L4 \n\n
+    Displacement: 1996 cm3\n\n
+    Power:\n
+        235.3 KW @ 6500 RPM\n
+        320 HP @ 6500 RPM\n
+        316 BHP @ 6500 RPM\n\n
+    Torque:\n
+        295 lb-ft @ 2500-4500 RPM\n
+        400 Nm @ 2500-4500 RPM\n\n
+    Fuel System: Turbocharged Direct Injection \n\n
+    Fuel: Gasoline"
+        android:textSize="19sp">
+    </TextView>
+
+</LinearLayout>
